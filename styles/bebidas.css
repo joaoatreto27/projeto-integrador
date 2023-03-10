@@ -6,8 +6,7 @@
 }
 
 body{
-    width: 100%;
-    height: 100%;
+    background-color: #F0F0F0;
 }
 
 .header{
@@ -15,7 +14,7 @@ body{
     width: 100%;
     height: 120px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     color: white;
     font-weight: 400;
     align-items: center;
@@ -27,10 +26,10 @@ body{
 }
 
 .pages{
+    margin-right: 400px;
     display: flex;
     justify-content: space-between;
-    align-self: center;
-    width: 500px;
+    margin-top: 10px;
 }
 
 .buttons{
@@ -39,58 +38,52 @@ body{
 }
 
 
-button{
+button, a{
     border-radius: 5px;
     border: none;
     margin: 10px;
     padding: 10px;
     display: flex;
     float: right;
-    font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
 
-.login{
-    width: 90px;
-    height: 45px;
-    align-items: center;
-    padding-left: 25px;
-    color: green;
-    font-weight: 900;
-    background-color: white;
+.sair-btn{
+    color: white;
+    font-size: medium;
+    background-color: green;
 }
 
-.register{
+.conta-btn{
+    font-size: medium;
     background-color: green;
     color: white;
-    font-size: 18px;
 }
 
-h2{
+.produtos-card{
     display: flex;
-    justify-content: center;
-    margin: 50px 0 50px 0;
+    background-color: #fff;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.search{
+.produtos-img{
+    border: 1px solid black;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
 }
 
-.search-input{
-    height: 40px;
-    margin-top: 10px;
-    width: 360px;
-    border-radius: 5px;
-    padding-left: 5px;
+p{
+    padding: 10px;
 }
 
-.search-btn{
-    float: none;
-    background-color: green;
-    color: white;
-    height: 40px;
-    align-items: center;
-}
 
 
