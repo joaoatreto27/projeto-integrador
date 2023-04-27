@@ -1,3 +1,15 @@
+<?php 
+    session_start();
+    include_once('conexao.php');
+
+    if ((!isset($_SESSION['cnpj']) === true) and (!isset($_SESSION['senha']) === true)) {
+        unset($_SESSION['cnpj']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +23,12 @@
     <header>
         <div class="header">
             <div class="pages">
-                <a href="./franqueado.html">Home</a>
-                <a href="./cadastro_produtos.html">Cadastrar Produto</a>
-                <a href="./filtro.html">Produtos</a>
+                <a href="./franqueado.php">Home</a>
+                <a href="./cadastro_produtos.php">Cadastrar Produto</a>
+                <a href="./filtro.php">Produtos</a>
             </div>
             <div class="buttons">
-                <a class="sair-btn" href="./index.html" >Sair</a>
-                <button class="conta-btn">Economerce</button>
+                <a class="sair-btn" href="./sair.php" >Sair</a>
             </div>
         </div>
     </header>
@@ -25,19 +36,19 @@
         <h2>Categorias</h2>
         <div class="filtros-card">
             <div class="filtros">
-                <a class="fundo-branco" href="./mercearia.html">
+                <a class="fundo-branco" href="./mercearia.php">
                     <img class="mercearia-img" src="./../assets/mercearia.png">
                     <p>Mercearia</p>
                 </a>
             </div>
             <div class="filtros">
-                <a class="fundo-branco" href="./limpeza.html">
+                <a class="fundo-branco" href="./limpeza.php">
                     <img class="limpeza-img" src="./../assets/limpeza.png">
                     <p>Limpeza</p>
                 </a>
             </div>
             <div class="filtros">
-                <a class="fundo-branco" href="./bebidas.html">
+                <a class="fundo-branco" href="./bebidas.php">
                     <img class="bebidas-img" src="./../assets/bebidas.png">
                     <p>Bebidas</p>
                 </a>

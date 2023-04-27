@@ -27,7 +27,6 @@ body{
 }
 
 
-
 button, a{
     border-radius: 5px;
     border: none;
@@ -46,78 +45,78 @@ button, a{
     background-color: green;
 }
 
-form{
+.card{
+    background-color: #fff;
+    width: 80%;
+    height: 369px;
+    margin: auto;
+    margin-top: 100px;
+    border: 3px solid #fff;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    padding-top: 20px;
-}
-
-form label{
-    margin-top: 5px;
+    align-items: center;
 }
 
 input{
-    width: 40%;
     margin-bottom: 10px;
-    height: 30px;
+    height: 40px;
     border-radius: 5px;
     border: 2px solid green;
     margin-top: 5px;
-    padding-left: 10px;
     outline: 0;
+    padding: 5px;
 }
 
-.adicionar-btn{
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+}
+
+.rua-bairro div{
+    width: 410px;
+    margin-right: 10px;
+}
+
+.add-endereco{
+    color: #fff;
+    background-color: rgb(15, 203, 15);
+    font-size: 16px;
     height: 40px;
-    width: 200px;
-    background-color: #FF5C00;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    align-items: center;
-    margin-left: -2px;
-    padding-left: 70px;
 }
 
-
-
-.picture-img{
-    max-width: 100%;
+.add-endereco i{
+    margin-left: 5px;
+    margin-top: 1px;
 }
 
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    
-}
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
-
+#cidade{
+    width: 500px;
+    margin-right: 10px;
 }
 
-.picture-input{
-    border: none;
-}
-
-input[type="file"]{
-    display: none;
-}
-
-.picture{
-    background-color: green;
-    width: 300px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-select{
+#uf{
     width: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#numero{
+    width: 210px;
+}
+
+#cep{
+    margin-right: 10px;
+}
+
+#complemento{
+    width: 400px;
+}
+
+#ponto_ref{
+    width: 830px;
 }

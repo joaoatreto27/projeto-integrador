@@ -14,8 +14,9 @@
     <header>
         <div class="header">
             <div class="buttons">
-                <a class="login-btn" href="./login.html">Entrar</a>
-                <a class="register-btn" href="./cadastro.html">Criar Conta</a>
+                <a class="login-btn" href="./login.php">Entrar</a>
+                <a class="register-btn" href="./cadastro.php">Criar conta como Franqueado</a>
+                <a class="register-btn" href="./cadastro_cliente.php">Criar conta como Cliente</a>
             </div>
         </div>
     </header>

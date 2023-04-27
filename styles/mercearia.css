@@ -21,19 +21,12 @@ body{
 }
 
 .pages{
-    margin-right: 400px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
-.buttons{
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-
-button, a{
+button, .sair-btn, .menu-btn{
     border-radius: 5px;
     border: none;
     margin: 10px;
@@ -43,18 +36,6 @@ button, a{
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-}
-
-.sair-btn{
-    color: white;
-    font-size: medium;
-    background-color: green;
-}
-
-.conta-btn{
-    font-size: medium;
-    background-color: green;
-    color: white;
 }
 
 .produtos-card{
@@ -80,5 +61,13 @@ p{
     padding: 10px;
 }
 
+img{
+    width: 80%;
+    margin: auto;
+}
+
+.href{
+    color: #000;
+}
 
 

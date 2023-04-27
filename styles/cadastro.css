@@ -1,120 +1,115 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-}
 
-body{
-    background-image: url(./background-img.jpeg);
-    background-position: top center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: #121214;
-}
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
 
-main{
-    display: flex;
-    justify-content: end;
-}
+        body{
+            background-image: url(./background-img.jpeg);
+            background-position: top center;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-color: #121214;
+        }
 
-.card-cadastro{
-    width: 70%;
-    height: 400px;
-    background-color: white;
-    border-radius: 15px;
-    padding-top: 30px;
-    align-items: center;
-    position: absolute;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-    margin: auto;
-}
+        main{
+            display: flex;
+            justify-content: end;
+        }
 
-.info{
-    margin-left: -20px;
-}
+        .card-cadastro{
+            width: 70%;
+            height: 400px;
+            background-color: white;
+            border-radius: 15px;
+            padding-top: 30px;
+            align-items: center;
+            position: absolute;
+            top: 0; bottom: 0;
+            left: 0; right: 0;
+            margin: auto;
+        }
 
-.inputs{
-    display: flex;
-    width: 80%;
-    margin: auto auto auto auto;
-    flex-direction: row;
-    justify-content: center;
-}
+        .info{
+            margin-left: -20px;
+        }
 
-input{
-    margin-bottom: 10px;
-    height: 30px;
-    border-radius: 5px;
-    border: 2px solid green;
-    margin-top: 5px;
-    padding-left: 10px;
-    outline: 0;
-}
+        .inputs{
+            display: flex;
+            width: 80%;
+            margin: auto auto auto auto;
+            flex-direction: row;
+            justify-content: center;
+        }
 
-.endereco{
-    border-left: 1px solid #999;
-    padding-left: 10px;
-    width: 74%;
-}
+        input{
+            margin-bottom: 10px;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid green;
+            margin-top: 5px;
+            padding-left: 10px;
+            outline: 0;
+        }
 
-.cadastrar-btn{
-    height: 40px;
-    background-color: #FF5C00;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    text-align: center;
-    padding-top: 10px;
-    text-decoration: none;
-}
+        .endereco{
+            border-left: 1px solid #999;
+            padding-left: 10px;
+            width: 74%;
+        }
 
-.input-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+        .cadastrar-btn{
+            height: 40px;
+            width: 100px;
+            background-color: #FF5C00;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
 
-.input-column{
-    display: flex;
-    flex-direction: column;
-    padding-right: 20px;
-}
+        .input-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
-.uf-input{
-    width: 100px;
-    
-}
+        .input-column{
+            display: flex;
+            flex-direction: column;
+            padding-right: 20px;
+        }
 
-.numero-input{
-    width: 150px;
-}
+        .uf-input{
+            width: 75px;
+            
+        }
 
-.cep-input{
-    width: 150px;
-}
+        .numero-input{
+            width: 150px;
+        }
 
-.button{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-right: 130px;
-    margin-bottom: 30px;
-}
+        .cep-input{
+            width: 150px;
+        }
 
-.button a{
-    width: 100px;
-}
+        .button{
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            align-items: center;
+            margin-top: 10px;
+        }
 
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    
-}
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
+        input[type=number]::-webkit-inner-spin-button { 
+            -webkit-appearance: none;
+            
+        }
+        input[type=number] { 
+        -moz-appearance: textfield;
+        appearance: textfield;
 
-}
+        }

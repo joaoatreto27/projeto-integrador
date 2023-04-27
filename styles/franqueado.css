@@ -21,21 +21,14 @@ body{
 }
 
 .pages{
-    margin-right: 400px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
 .pages a{
     color: #fff;
 }
-
-.buttons{
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
 
 button, a{
     border-radius: 5px;
@@ -53,12 +46,6 @@ button, a{
     color: white;
     font-size: medium;
     background-color: green;
-}
-
-.conta-btn{
-    font-size: medium;
-    background-color: green;
-    color: white;
 }
 
 .cards{
@@ -88,6 +75,13 @@ button, a{
     padding-right: 10px;
 }
 
+.card svg{
+    width: 155px;
+    height: 155px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
 .card p{
     text-align: center;
 }
@@ -99,4 +93,33 @@ a{
 
 .inf-card p{
     padding-bottom: 15px;
+}
+
+.box-search{
+    display: flex;
+    gap: 1%;
+    margin-top: 20px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-search input{
+    height: 40px;
+    width: 400px;
+}
+
+.box-search svg{
+    background-color: transparent;
+}
+
+.table-bg{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px 15px 0 0;
+    width: 95vw;
+}
+
+.frame{
+    width: 100px;
+
 }
