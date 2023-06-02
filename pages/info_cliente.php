@@ -34,18 +34,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../styles/info.css">
+    <link rel="stylesheet" href="./../styles/info_cliente.css">
+    <link rel="stylesheet" href="./../styles/hover.css">
     <title>Cliente</title>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="pages">
-                <a href="./cliente.php">Home</a>
-                <a href="./info_cliente.php">Informações Pessoais</a>
+                <a href="./cliente.php" class="hover">Home</a>
+                <a href="./info_cliente.php" class="hover">Informações Pessoais</a>
             </div>
             <div class="buttons">
-                <a class="sair-btn" href="./sair.php">Sair</a>
+                <a class="sair-btn hover" href="./sair.php">Sair</a>
             </div>
         </div>
     </header>

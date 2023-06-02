@@ -1,115 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
 
-        body{
-            background-image: url(./background-img.jpeg);
-            background-position: top center;
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            background-color: #121214;
-        }
+body {
+    background-image: url(./background-img.jpeg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
 
-        main{
-            display: flex;
-            justify-content: end;
-        }
+main {
+    display: flex;
+    justify-content: end;
+}
 
-        .card-cadastro{
-            width: 70%;
-            height: 400px;
-            background-color: white;
-            border-radius: 15px;
-            padding-top: 30px;
-            align-items: center;
-            position: absolute;
-            top: 0; bottom: 0;
-            left: 0; right: 0;
-            margin: auto;
-        }
+.card-cadastro {
+    width: 70%;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 30px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
-        .info{
-            margin-left: -20px;
-        }
+.info {
+    margin-left: -20px;
+}
 
-        .inputs{
-            display: flex;
-            width: 80%;
-            margin: auto auto auto auto;
-            flex-direction: row;
-            justify-content: center;
-        }
+.inputs {
+    display: flex;
+    width: 80%;
+    margin: auto auto auto auto;
+    flex-direction: row;
+    justify-content: center;
+}
 
-        input{
-            margin-bottom: 10px;
-            height: 30px;
-            border-radius: 5px;
-            border: 2px solid green;
-            margin-top: 5px;
-            padding-left: 10px;
-            outline: 0;
-        }
+input {
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid green;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: 0;
+}
 
-        .endereco{
-            border-left: 1px solid #999;
-            padding-left: 10px;
-            width: 74%;
-        }
+.endereco {
+    border-left: 1px solid #999;
+    padding-left: 10px;
+    width: 74%;
+}
 
-        .cadastrar-btn{
-            height: 40px;
-            width: 100px;
-            background-color: #FF5C00;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-        }
+.cadastrar-btn {
+    height: 40px;
+    width: 100px;
+    background-color: #FF5C00;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
 
-        .input-row{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+.input-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-        .input-column{
-            display: flex;
-            flex-direction: column;
-            padding-right: 20px;
-        }
+.input-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
 
-        .uf-input{
-            width: 75px;
-            
-        }
+.uf-input {
+    width: 75px;
 
-        .numero-input{
-            width: 150px;
-        }
+}
 
-        .cep-input{
-            width: 150px;
-        }
+.numero-input {
+    width: 150px;
+}
 
-        .button{
-            display: flex;
-            width: 100%;
-            justify-content: end;
-            align-items: center;
-            margin-top: 10px;
-        }
+.cep-input {
+    width: 150px;
+}
 
-        input[type=number]::-webkit-inner-spin-button { 
-            -webkit-appearance: none;
-            
-        }
-        input[type=number] { 
-        -moz-appearance: textfield;
-        appearance: textfield;
+.button {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    margin-top: -20px;
+}
 
-        }
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.picture{
+    background-color: green;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+}

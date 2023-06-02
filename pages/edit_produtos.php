@@ -41,6 +41,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../styles/cadastro_produtos.css">
+    <link rel="stylesheet" href="./../styles/hover.css">
     <title>Cadastro de Produtos</title>
     <script type="text/javascript" src="./../scripts/index.js"></script>
 </head>
@@ -48,12 +49,12 @@
     <header>
         <div class="header">
             <div class="pages">
-                <a href="./franqueado.php">Home</a>
-                <a href="./cadastro_produtos.php">Cadastrar Produto</a>
-                <a href="./filtro.php">Produtos</a>
+                <a href="./franqueado.php"  class="hover">Home</a>
+                <a href="./cadastro_produtos.php" class="hover">Cadastrar Produto</a>
+                <a href="./filtro.php" class="hover">Produtos</a>
             </div>
             <div class="buttons">
-                <a class="sair-btn" href="./sair.php">Sair</a>
+                <a class="sair-btn hover" href="./sair.php">Sair</a>
             </div>
         </div>
     </header>

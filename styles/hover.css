@@ -1,0 +1,15 @@
+.hover{
+    transition: 1s;
+}
+
+.hover:hover{
+    color: #FF5C00;
+}
+
+.hover-btn{
+    transition: 1s;
+}
+
+.hover-btn:hover{
+    background-color: rgb(7, 179, 7);
+}

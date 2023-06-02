@@ -18,21 +18,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../styles/franqueado.css">
+    <link rel="stylesheet" href="./../styles/franqueado.css">  
+    <link rel="stylesheet" href="./../styles/hover.css">
     <title>Administrador</title>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="pages">
-                <a href="./administrador.php">Home</a>
-                <a href="./info_mercados_admin.php">Informações de Mercados</a>
-                <a href="./clientes_administrador.php">Clientes</a>
-                <a href="./produtos_administrador.php">Produtos Cadastrados</a>
-                <a href="./enderecos_administrador.php">Endereços Cadastrados</a>
+                <a href="./administrador.php" class="hover">Home</a>
+                <a href="./info_mercados_admin.php" class="hover">Informações de Mercados</a>
+                <a href="./clientes_administrador.php" class="hover">Clientes</a>
+                <a href="./produtos_administrador.php" class="hover">Produtos Cadastrados</a>
+                <a href="./enderecos_administrador.php" class="hover">Endereços Cadastrados</a>
             </div>
             <div class="buttons">
-                <a class="sair-btn" href="./sair.php">Sair</a>
+                <a class="sair-btn hover" href="./sair.php">Sair</a>
             </div>
         </div>
     </header>
