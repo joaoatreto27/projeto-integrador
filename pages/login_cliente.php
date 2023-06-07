@@ -19,6 +19,7 @@
                     <input name="senha" type="password" placeholder="Digite sua senha..."/>
                     <button class="entrar-btn" type="submit" name="submit">Entrar</button>
                     <p>Deseja logar como franqueado? <a href="./login.php">Clique Aqui!</a></p>
+                    <p>Não possui uma conta? <a href="./cadastro_cliente.php">Cadastre-se!</a></p>
                 </div>    
             </form>
         </div>

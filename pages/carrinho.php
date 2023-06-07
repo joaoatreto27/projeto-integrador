@@ -2,6 +2,8 @@
     include_once('conexao.php');
     session_start();
 
+    $carrinhoFinal = $_SESSION['carrinho'];
+
     if (isset($_POST['remover_produto'])) {
         $idProduto = $_POST['id_produto'];
         $idMercado = $_POST['idMercado'];
@@ -17,31 +19,46 @@
         if ($indice != -1) {
             unset($_SESSION['carrinho'][$indice]);
         }
+
+        $_SESSION['carrinho_serializado'] = serialize($carrinhoFinal);
     
-        header('Location: mercado.php?id=1');
+        header('Location: mercado.php?id=' . $idMercado);
         exit();
     }
 
     if (isset($_POST['id'])) {
-
         $idProduto = $_POST['id'];
         $idMercado = $_POST['idMercado'];
+        $quantidade = $_POST['quantidade'];
 
         $query = "SELECT * FROM produtos WHERE id_produto = $idProduto";
         $result = mysqli_query($conexao, $query);
         $produto = mysqli_fetch_assoc($result);
         $total = 0;
+        
         if ($produto) {
-            $_SESSION['carrinho'][] = $produto;
+            $produtoEncontrado = false;
+            foreach ($_SESSION['carrinho'] as & $produtoCarrinho) {
+                if ($produtoCarrinho['id_produto'] == $idProduto) {
+                    $produtoCarrinho['quantidade'] += $quantidade;
+                    $produtoEncontrado = true;
+                    break;
+                }
+            }
+
+            if (!$produtoEncontrado) {
+                $produto['quantidade'] = $quantidade;
+                $_SESSION['carrinho'][] = $produto;
+            }
+
+            $_SESSION['carrinho_serializado'] = serialize($carrinhoFinal);
+            
             $total += $produto['valor'];
             header('Location: mercado.php?id=' . $idMercado);
-            
         } else {
             echo 'Produto não encontrado.';
         }
 
-        mysqli_close($conn);
-    } else {
-        echo 'ID do produto não especificado.';
+        mysqli_close($conexao);
     }
 ?>

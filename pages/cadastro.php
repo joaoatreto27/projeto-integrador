@@ -54,7 +54,7 @@
 </head>
 <body>
     <main>
-        <div class="card-cadastro">
+    <div class="card-cadastro">
             <form action="cadastro.php" method="POST" enctype="multipart/form-data">
                 <div class="card-cadastro">
                     <div class="inputs">
@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                             <div class="input-column">
-                                <label class="picture" for="imagem" tabindex="0">Escolha uma imagem para o produto:</label>
+                                <label class="picture hover-btn" for="image" tabindex="0">Escolha uma imagem para o mercado:</label>
                                 <input type="file" accept="image/*" id="image" class="picture-input" name="imagem" />
                             </div>
                         </div>

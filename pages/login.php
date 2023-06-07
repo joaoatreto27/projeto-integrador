@@ -20,6 +20,7 @@
                     <input name="senha" type="password" placeholder="Digite sua senha..."/>
                     <button class="entrar-btn" type="submit" name="submit">Entrar</button>
                     <p>Deseja logar como cliente? <a href="./login_cliente.php">Clique Aqui!</a></p>
+                    <p>Não possui uma conta? <a href="./cadastro.php">Cadastre-se!</a></p>
                 </div>    
             </form>
         </div>

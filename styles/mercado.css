@@ -244,3 +244,8 @@ img{
 .nome-produto{
     width: 280px;
 }
+
+.form-finalizar{
+    width: 100%;
+    margin-right: 30px;
+}
